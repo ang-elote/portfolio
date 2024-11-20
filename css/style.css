@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --negro: #181818;
+  --blanco: #f1f1f1;
+}
+
+@font-face {
+  font-family: "SerialC";
+  src: url("fonts/SerialC-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SerialC";
+  src: url("fonts/SerialC-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SerialC";
+  src: url("fonts/SerialC-Heavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SerialC";
+  src: url("fonts/SerialC-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SerialC";
+  src: url("fonts/SerialC-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SerialC";
+  src: url("fonts/SerialC-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-family: Epilogue;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding-top: 0.8%;
+  padding-left: 0.3%;
+  margin-top: 2.5%;
+}
+
+@keyframes grow {
+  0% {
+    font-size: 1rem;
+  }
+  100% {
+    font-size: 2rem;
+  }
+}
+.navbar a:hover {
+  animation: grow 0.3s ease forwards;
+  font-weight: 100;
+  font-family: Libre Caslon Text;
+  font-style: oblique;
+}
+
+.angelas {
+  font-family: "SerialC", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+}
