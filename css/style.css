@@ -79,3 +79,16 @@
   font-weight: 500;
   font-size: 4rem;
 }
+
+.portfoliotitle {
+  font-family: Libre Caslon Text;
+  font-style: oblique;
+}
+
+p {
+  font-family: Epilogue;
+}
+
+.uxui {
+  font-family: Helvetica School;
+}

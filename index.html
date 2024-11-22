@@ -4,47 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ángela's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Libre+Caslon+Text:wght@400;700&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+        .libre-caslon {
+            font-family: 'Libre Caslon Text', serif;
+            font-style: oblique;
+        }
+        /*serial c font*/
+        @font-face {
+  font-family: "SerialC";
+  src: url("fonts/SerialC-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+        }
+        @font-face {
+        font-family: "SerialC";
+        src: url("fonts/SerialC-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        }
+        @font-face {
+        font-family: "SerialC";
+        src: url("fonts/SerialC-Heavy.ttf") format("truetype");
+        font-weight: 800;
+        font-style: normal;
+        }
+        @font-face {
+        font-family: "SerialC";
+        src: url("fonts/SerialC-Light.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        }
+        @font-face {
+        font-family: "SerialC";
+        src: url("fonts/SerialC-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        }
+        @font-face {
+        font-family: "SerialC";
+        src: url("fonts/SerialC-Heavy.ttf") format("truetype");
+        font-weight: 800;
+        font-style: normal;
+        }
+        @font-face {
+        font-family: "SerialC";
+        src: url("fonts/SerialC-Light.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        }
+        @font-face {
+        font-family: "SerialC";
+        src: url("fonts/SerialC-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        }
     </style>
+
+
 </head>
 <body class="bg-gray-100 text-gray-900 font-sans">
+
     <!-- Navbar -->
     <header class="relative">
-        <nav class=" navbar absolute left-[60%] w-[40%] flex">
-            <ul class="hidden md:flex space-x-6">
-                <li><a href="#works">works</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li><a href="#about me">about me</a></li>
+        <nav class="absolute right-5 top-6 md:top-10 flex items-center">
+            <ul class="hidden md:flex space-x-6 text-lg font-light">
+                <li><a href="#works" class="hover:underline">works</a></li>
+                <li><a href="#about" class="hover:underline">about me</a></li>
+                <li><a href="#contact" class="hover:underline">contact</a></li>
             </ul>
-            <button class="md:hidden text-xl ">&#9776;</button>
+            <button id="menu-btn" class="md:hidden text-2xl">&#9776;</button>
         </nav>
+        <div id="mobile-menu" class="hidden absolute right-5 top-16 bg-white shadow-md rounded-md p-5">
+            <ul class="flex flex-col space-y-4 text-lg font-light">
+                <li><a href="#works" class="hover:underline">works</a></li>
+                <li><a href="#about" class="hover:underline">about me</a></li>
+                <li><a href="#contact" class="hover:underline">contact</a></li>
+            </ul>
+        </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto py-10">
-        <section id="about" class="mb-10">
-            <h1 class="angelas">ángela's</h1>
+<!-- Hero Section -->
+<main class="container mx-auto mt-12 px-5 md:px-20">
+    <section id="hero" class="mb-16">
+        <!-- Main Titles -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl leading-tight" style="font-family: 'SerialC';">
+            ángela's
+        </h1>
+        <h2 class="libre-caslon text-6xl sm:text-7xl md:text-8xl lg:text-9xl mt-2 lg:ml-36 md:ml-16 sm:ml-32">
+            portfolio
+        </h2>
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-light -mt-2 lg:ml-[27rem] md:ml-56 sm:ml-32" style="font-family: 'Helvetica School';">
+            UX & UI Designer
+        </h3>
 
-            <p>Welcome to my portfolio! I'm a developer passionate about design and code.</p>
-        </section>
+        <!-- Welcome Section -->
+        <section class="px-6 py-12">
+            <div class="flex flex-col lg:flex-row items-center">
+                <!-- Vertical/Horizontal Title -->
+                <div class="text-center lg:text-left flex-shrink-0">
+                    <h1 class="text-4xl lg:text-6xl lowercase transform rotate-0 lg:-rotate-90 whitespace-nowrap lg:whitespace-normal" style="font-family: 'SerialC';">
+                        welcome
+                    </h1>
+                </div>
 
-        <section id="projects" class="mb-10">
-            <h2 class="text-3xl font-bold mb-4">Projects</h2>
-            <p>Here are some of my latest works.</p>
-        </section>
+                <!-- Paragraph + Image Container -->
+                <div class="flex flex-col md:flex-row items-center md:items-start mt-6 md:mt-0 md:ml-8 space-y-6 md:space-y-0">
+                    <!-- Paragraph -->
+                    <div class="max-w-lg text-gray-700 text-center md:text-left">
+                        <p class="text-lg leading-relaxed">
+                            Welcome to my portfolio! Discover my creative journey through UX/UI design. I focus on crafting user-centered experiences with bold, minimalistic visuals. Feel free to explore my work!
+                        </p>
+                    </div>
 
-        <section id="contact">
-            <h2 class="text-3xl font-bold mb-4">Contact</h2>
-            <p>Feel free to reach out!</p>
+                    <!-- Image -->
+                    <div class="flex-shrink-0 md:ml-6">
+                        <img src="img/yo.png" alt="Portfolio Illustration" class="w-full md:max-w-xs">
+                    </div>
+                </div>
+            </div>
         </section>
-    </main>
+    </section>
+</main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-100 py-4">
-        <p class="text-center">&copy; 2024 Your Name</p>
+    <footer class="bg-gray-800 text-white py-4">
+        <p class="text-center text-sm">&copy; 2024 Ángela Chávez</p>
     </footer>
+
+    <script>
+        // Navbar hamburger functionality
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
